@@ -59,7 +59,7 @@ module PagSeguro
     @uris ||= {
       production: {
         api: "https://ws.pagseguro.uol.com.br/v2",
-        site: "https://pagseguro.uol.com.br/v2"
+        site: "https://sandbox.pagseguro.uol.com.br/v2"
       }
     }
   end
