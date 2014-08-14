@@ -1,9 +1,9 @@
-# coding: utf-8
+# encoding: utf-8
 require "./lib/pagseguro/version"
 
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 1.9.3"
-  spec.name                  = "pagseguro-oficial"
+  spec.name                  = "pagseguro-custom"
   spec.version               = PagSeguro::VERSION
   spec.authors               = ["Nando Vieira"]
   spec.email                 = ["fnando.vieira@gmail.com"]
