@@ -58,8 +58,13 @@ module PagSeguro
   def self.uris
     @uris ||= {
       production: {
-        api: "https://ws.sandbox.pagseguro.uol.com.br/v2",
-        site: "https://sandbox.pagseguro.uol.com.br/v2"
+        if  Rails.env.production?
+          api: "https://ws.pagseguro.uol.com.br/v2",
+          site: "https://pagseguro.uol.com.br/v2"
+        else
+          api: "https://ws.sandbox.pagseguro.uol.com.br/v2",
+          site: "https://sandbox.pagseguro.uol.com.br/v2"
+        end
       }
     }
   end
